@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booth's Binary Multiplier - About Booth's Algorithm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="hero">
+            <h1>Booth's Binary Multiplier</h1>
+            <p class="subtitle">Multiply binary numbers with cutting-edge efficiency</p>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Calculator</a></li>
+                <li><a href="about-booth.html">About Booth's Algorithm</a></li>
+                <li><a href="about-me.html">About Me</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="about-booth" class="section">
+                <h2>About Booth's Algorithm</h2>
+                <p>Booth's algorithm, devised by Andrew Donald Booth in 1951, is a multiplication technique optimized for signed binary numbers in two’s complement notation. It reduces the number of arithmetic operations by analyzing consecutive bits of the multiplier and performing one of three actions:</p>
+                <ul>
+                    <li><strong>Addition</strong>: When the bit pair transitions from 0 to 1 (01), the multiplicand is added to the accumulator.</li>
+                    <li><strong>Subtraction</strong>: When the bit pair transitions from 1 to 0 (10), the multiplicand is subtracted from the accumulator.</li>
+                    <li><strong>No Operation</strong>: When the bits are the same (00 or 11), only a shift occurs.</li>
+                </ul>
+                <p>Each step concludes with an arithmetic right shift of the accumulator and multiplier, preserving the sign bit. This process repeats for a number of iterations equal to the bit width, resulting in a 2n-bit product. Its efficiency and elegance make it a fundamental concept in computer architecture, particularly in hardware multiplier design.</p>
+            </section>
+        </main>
+        <footer>
+            <p>© 2025. Shukla Harsh JS</p>
+        </footer>
+    </div>
+</body>
+</html>
